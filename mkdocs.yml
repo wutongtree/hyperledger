@@ -1,0 +1,28 @@
+site_name: 区块链技术博客
+site_url: https://wutongtree.github.io/blocktech/
+theme: simplex
+site_description: '介绍区块链技术的博客'
+
+pages:
+- 首页: index.md
+- 区块链技术: 
+  - Hyperledger: technology/hyperledger.md
+  - Ethereum: technology/ethereum.md
+  - Docker: technology/docker.md
+  - Go: technology/go.md
+- 原创翻译: translations/translations.md
+- 行业动态: news/reports.md
+
+- 网络资源: resources/resources.md
+ 
+markdown_extensions:
+  - extra
+  - tables
+  - toc
+  - fenced_code
+  - smarty
+  - mdx_math:
+      enable_dollar_delimiter: True
+  - footnotes
+
+copyright: Copyright &copy; 2014-2016 <a href="https://wutongtree.com" target="_blank">wutongtree.com</a>
