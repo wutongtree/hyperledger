@@ -3,6 +3,9 @@ site_url: https://wutongtree.github.io/blocktech/
 theme: simplex
 site_description: '介绍区块链技术的博客'
 
+docs_dir: blogs
+site_dir: docs
+
 pages:
 - 首页: index.md
 - 区块链技术: 

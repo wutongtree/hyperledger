@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>https://wutongtree.github.io/blocktech//</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>https://wutongtree.github.io/blocktech//technology/hyperledger/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wutongtree.github.io/blocktech//technology/ethereum/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wutongtree.github.io/blocktech//technology/docker/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wutongtree.github.io/blocktech//technology/go/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>https://wutongtree.github.io/blocktech//translations/translations/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://wutongtree.github.io/blocktech//news/reports/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://wutongtree.github.io/blocktech//resources/resources/</loc>
+     <lastmod>2016-08-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>

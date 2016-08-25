@@ -1,0 +1,69 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "\u5173\u4e8e\u533a\u5757\u94fe\n\n\n\u5173\u4e8e\u533a\u5757\u94fe\u7684\u4e00\u5207\u3002", 
+            "title": "\u9996\u9875"
+        }, 
+        {
+            "location": "/#_1", 
+            "text": "\u5173\u4e8e\u533a\u5757\u94fe\u7684\u4e00\u5207\u3002", 
+            "title": "\u5173\u4e8e\u533a\u5757\u94fe"
+        }, 
+        {
+            "location": "/technology/hyperledger/", 
+            "text": "", 
+            "title": "Hyperledger"
+        }, 
+        {
+            "location": "/technology/ethereum/", 
+            "text": "", 
+            "title": "Ethereum"
+        }, 
+        {
+            "location": "/technology/docker/", 
+            "text": "", 
+            "title": "Docker"
+        }, 
+        {
+            "location": "/technology/go/", 
+            "text": "", 
+            "title": "Go"
+        }, 
+        {
+            "location": "/translations/translations/", 
+            "text": "", 
+            "title": "\u539f\u521b\u7ffb\u8bd1"
+        }, 
+        {
+            "location": "/news/reports/", 
+            "text": "", 
+            "title": "\u884c\u4e1a\u52a8\u6001"
+        }, 
+        {
+            "location": "/resources/resources/", 
+            "text": "\u6280\u672f\u7c7b\n\n\n\n\nNXT\u767d\u76ae\u4e66\u4e2d\u6587\u7248\n\n\nPoX\u7684\u6218\u4e89\u2014\u2014\u533a\u5757\u94fe\u6280\u672f\u5728\u91d1\u878d\u5de5\u5177\u4e2d\u7684\u5e94\u7528\n\n\n\n\n\u4ea7\u54c1\u7c7b\n\n\n\n\nHyperledger\n\n\n\n\n\u89c6\u9891\u7c7b\n\n\n\n\nBlockchain in a Global Context\n\n\n\n\n\u65b0\u95fb\u7c7b\n\n\n\n\nCoinDesk", 
+            "title": "\u7f51\u7edc\u8d44\u6e90"
+        }, 
+        {
+            "location": "/resources/resources/#_1", 
+            "text": "NXT\u767d\u76ae\u4e66\u4e2d\u6587\u7248  PoX\u7684\u6218\u4e89\u2014\u2014\u533a\u5757\u94fe\u6280\u672f\u5728\u91d1\u878d\u5de5\u5177\u4e2d\u7684\u5e94\u7528", 
+            "title": "\u6280\u672f\u7c7b"
+        }, 
+        {
+            "location": "/resources/resources/#_2", 
+            "text": "Hyperledger", 
+            "title": "\u4ea7\u54c1\u7c7b"
+        }, 
+        {
+            "location": "/resources/resources/#_3", 
+            "text": "Blockchain in a Global Context", 
+            "title": "\u89c6\u9891\u7c7b"
+        }, 
+        {
+            "location": "/resources/resources/#_4", 
+            "text": "CoinDesk", 
+            "title": "\u65b0\u95fb\u7c7b"
+        }
+    ]
+}
