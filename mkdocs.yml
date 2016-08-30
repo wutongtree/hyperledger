@@ -1,22 +1,21 @@
-site_name: 区块链技术博客
-site_url: https://wutongtree.github.io/blocktech/
+site_name: Hyperledger技术博客
+site_url: https://wutongtree.github.io/hyperledger/
 theme: simplex
-site_description: '介绍区块链技术的博客'
+site_description: '介绍Hyperledger技术的博客'
 
-docs_dir: blogs
+docs_dir: markdowns
 site_dir: docs
 
 pages:
 - 首页: index.md
-- 区块链技术: 
-  - Hyperledger: technology/hyperledger.md
-  - Ethereum: technology/ethereum.md
-  - Docker: technology/docker.md
-  - Go: technology/go.md
-- 原创翻译: translations/translations.md
-- 行业动态: news/reports.md
+- 源码分析: 
+  - Hyperledger源码分析: technology/index.md
+  - 共识算法: technology/consensus.md
+- 安装部署: installation/index.md
+- 原创翻译: translations/index.md
+- 行业动态: news/index.md
 
-- 网络资源: resources/resources.md
+- 网络资源: resources/index.md
  
 markdown_extensions:
   - extra

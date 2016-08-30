@@ -1,1 +1,1 @@
-通过域名访问：<https://wutongtree.github.io/blocktech/>
+通过域名访问：<https://wutongtree.github.io/hyperledger/>
