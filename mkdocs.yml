@@ -1,16 +1,24 @@
-site_name: Hyperledger技术博客
-site_url: https://wutongtree.github.io/hyperledger/
+site_name: 区块链实用手册
+site_url: https://wutongtree.github.io
 theme: simplex
-site_description: '介绍Hyperledger技术的博客'
+site_description: '区块链实用手册 -- Hyperledger, Ethereum, Ripple'
+site_author: 'hyper@crypto2x.com'
 
 docs_dir: markdowns
 site_dir: docs
+dev_addr: 127.0.0.1:8001
 
 pages:
 - 首页: index.md
-- 源码分析: 
-  - Hyperledger源码分析: technology/index.md
-  - 共识算法: technology/consensus.md
+- Hyperledger源码分析:
+  - Hyperledger源码分析: hyperledger/index.md
+  - 会员服务: hyperledger/membership.md
+  - 共识算法: hyperledger/consensus.md
+  - 区块链: hyperledger/blockchain.md
+  - 链码: hyperledger/chaincode.md
+  - 交易: hyperledger/transaction.md
+  - 事件流: hyperledger/events.md
+  - 代码贡献: hyperledger/contributor.md
 - 安装部署: installation/index.md
 - 原创翻译: translations/index.md
 - 行业动态: news/index.md

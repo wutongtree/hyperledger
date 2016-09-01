@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>https://wutongtree.github.io/blocktech//</loc>
-     <lastmod>2016-08-25</lastmod>
+     <loc>https://wutongtree.github.io/</loc>
+     <lastmod>2016-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,26 +12,50 @@
     
         
     <url>
-     <loc>https://wutongtree.github.io/blocktech//technology/hyperledger/</loc>
-     <lastmod>2016-08-25</lastmod>
+     <loc>https://wutongtree.github.io/hyperledger/</loc>
+     <lastmod>2016-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://wutongtree.github.io/blocktech//technology/ethereum/</loc>
-     <lastmod>2016-08-25</lastmod>
+     <loc>https://wutongtree.github.io/hyperledger/membership/</loc>
+     <lastmod>2016-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://wutongtree.github.io/blocktech//technology/docker/</loc>
-     <lastmod>2016-08-25</lastmod>
+     <loc>https://wutongtree.github.io/hyperledger/consensus/</loc>
+     <lastmod>2016-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://wutongtree.github.io/blocktech//technology/go/</loc>
-     <lastmod>2016-08-25</lastmod>
+     <loc>https://wutongtree.github.io/hyperledger/blockchain/</loc>
+     <lastmod>2016-09-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wutongtree.github.io/hyperledger/chaincode/</loc>
+     <lastmod>2016-09-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wutongtree.github.io/hyperledger/transaction/</loc>
+     <lastmod>2016-09-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wutongtree.github.io/hyperledger/events/</loc>
+     <lastmod>2016-09-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wutongtree.github.io/hyperledger/contributor/</loc>
+     <lastmod>2016-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -39,24 +63,32 @@
 
     
     <url>
-     <loc>https://wutongtree.github.io/blocktech//translations/translations/</loc>
-     <lastmod>2016-08-25</lastmod>
+     <loc>https://wutongtree.github.io/installation/</loc>
+     <lastmod>2016-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>https://wutongtree.github.io/blocktech//news/reports/</loc>
-     <lastmod>2016-08-25</lastmod>
+     <loc>https://wutongtree.github.io/translations/</loc>
+     <lastmod>2016-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>https://wutongtree.github.io/blocktech//resources/resources/</loc>
-     <lastmod>2016-08-25</lastmod>
+     <loc>https://wutongtree.github.io/news/</loc>
+     <lastmod>2016-09-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://wutongtree.github.io/resources/</loc>
+     <lastmod>2016-09-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
