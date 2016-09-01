@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="hyper@crypto2x.com">
+        <link rel="canonical" href="https://wutongtree.github.io/installation/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>安装部署 - 区块链实用手册</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">区块链实用手册</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">首页</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hyperledger源码分析 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../hyperledger/">Hyperledger源码分析</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../hyperledger/membership/">会员服务</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../hyperledger/consensus/">共识算法</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../hyperledger/blockchain/">区块链</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../hyperledger/chaincode/">链码</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../hyperledger/transaction/">交易</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../hyperledger/events/">事件流</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../hyperledger/contributor/">代码贡献</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="active">
+                    <a href="./">安装部署</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../translations/">原创翻译</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../news/">行业动态</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../resources/">网络资源</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../hyperledger/contributor/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../translations/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#_1">安装部署</a></li>
+        
+            <li><a href="#vagrant">Vagrant安装</a></li>
+        
+            <li><a href="#_4">镜像启动运行</a></li>
+        
+            <li><a href="#_5">源码编译安装</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h2 id="_1">安装部署</h2>
+<p>Fabric的运行环境是：Host-&gt;VM-&gt;Docker，所以可以有如下几种不同的安装方式：</p>
+<h3 id="vagrant">Vagrant安装</h3>
+<p>这种方式主要是用于搭建开发测试环境，能够在Windows/Mac/Linux等不同的环境下配置出相同的环境来。</p>
+<h4 id="_2">准备工作</h4>
+<ul>
+<li>配置环境变量 </li>
+</ul>
+<p>请自行替换下面GOPATH的设置：</p>
+<pre><code>claritys-MBP:~ clarity$ cat ~/.profile
+export GOROOT=/usr/local/go
+export GOPATH=/Users/clarity/Projects
+export PATH=$PATH:/usr/local/sbin
+</code></pre>
+
+<ul>
+<li>安装Git并下载源码</li>
+</ul>
+<pre><code>mkdir -p $GOPATH/src/github.com/hyperledger
+cd $GOPATH/src/github.com/hyperledger
+git clone http://gerrit.hyperledger.org/r/fabric
+</code></pre>
+
+<ul>
+<li>下载并安装Vagrant和VirtualBox</li>
+</ul>
+<p>注意：Virtualbox不能下载5.1.X的版本，否则会和Vagrant 1.8.4冲突，出现错误：</p>
+<pre><code>No usable default provider could be found for your system.
+</code></pre>
+
+<h4 id="vagrant_1">运行Vagrant</h4>
+<p>修改ubuntu源：$GOPATH/src/github.com/hyperledger/fabric/scripts/provision/common.sh，在apt-get update前增加一行：</p>
+<pre><code>sed -i &quot;s/us.archive.ubuntu.com/cn.archive.ubuntu.com/g&quot; /etc/apt/sources.list
+</code></pre>
+
+<pre><code>cd $GOPATH/src/github.com/hyperledger/fabric/devenv
+vagrant up
+</code></pre>
+
+<p>运行前请配置好翻墙的网络环境，否则某些步骤可能就卡死了。根据网络状况不同，上面的过程可能会很慢，1-5个小时不等。</p>
+<p>Proxifier需要设置代理的域名：</p>
+<pre><code>*.googlesource.com;*.amazonaws.com;security.ubuntu.com;
+</code></pre>
+
+<p>Proxifier不需要DNS解析的域名：</p>
+<pre><code>*.archive.ubuntu.com;*.gradle.org;*.launchpad.net;github-cloud.s3.amazonaws.com;security.ubuntu.com;
+</code></pre>
+
+<p>如果遇到如下错误：</p>
+<pre><code>SSL read: error:00000000:lib(0):func(0):reason(0), errno 60
+</code></pre>
+
+<p>可以手动下载解决：</p>
+<pre><code>vagrant box add hyperledger/fabric-baseimage -c
+</code></pre>
+
+<p>如果遇到如下错误：</p>
+<pre><code>W: Failed to fetch http://security.ubuntu.com/ubuntu/dists/trusty-security/restricted/source/Sources  Hash Sum mismatch
+</code></pre>
+
+<p>产生的原因是网络中有缓存，源的更新速度不匹配导致的，所以可能换一个网络环境就没有这个问题。我是手动设置Proxifier的规则，让security.ubuntu.com走代理绕过去的。另外，默认的源是us.archive.ubuntu.com，可以先vagrant ssh进入系统，手动设置源为cn.archive.ubuntu.com或者mirrors.163.com，速度会快一点。</p>
+<p>如果需要如下错误：</p>
+<pre><code>Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
+</code></pre>
+
+<p>说明是之前异常退出，后台进程还在运行冲突导致的，vagrant ssh进去干掉apt进程，再vagrant up就可以了。</p>
+<h4 id="vagrant-vm">进入Vagrant VM</h4>
+<pre><code>vagrant ssh
+</code></pre>
+
+<h4 id="docker-compose">安装docker-compose</h4>
+<p>保存如下内容到install_dockercompose.sh：</p>
+<pre><code>#!/bin/sh
+
+# docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.7.1/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
+# write docker command
+## display docker process
+cat &gt; /bin/dp &lt;&lt;END
+#!/bin/sh
+
+# display docker process
+docker ps -a
+END
+chmod +x /bin/dp
+
+## rm container with Docker Container ID/Names
+cat &gt; /bin/dr &lt;&lt;END
+#!/bin/sh
+
+## container with Docker Container ID/Names
+if [ \$# -lt 1 ]; then
+    echo &quot;\$0 id/name&quot;
+    echo &quot;rm container with Docker Container ID/Names&quot;
+    exit 1
+fi
+id=\$1
+containerid=\$(docker ps -a|awk '{if ((\$1~/'&quot;\$id&quot;'/ || \$NF~/'&quot;\$id&quot;'/) &amp;&amp; NR &gt;1) {print \$1,\$NF;}}')
+echo &quot;stop/rm containerid:&quot; \$containerid
+docker stop \$containerid
+docker rm \$containerid
+END
+chmod +x /bin/dr
+
+## docker images
+cat &gt; /bin/dm &lt;&lt;END
+#!/bin/sh
+
+docker images
+END
+chmod +x /bin/dm
+
+## docker rm images
+cat &gt; /bin/dri &lt;&lt;END
+#!/bin/sh
+
+## container with Docker Image ID/Names
+if [ \$# -lt 1 ]; then
+    image_id=\$(docker images |awk '{if (\$1~/&lt;none&gt;/) {print \$3;}}')
+    docker rmi -f \$image_id
+    exit 0
+fi
+id=\$1
+image_id=\$(docker images |awk '{if (\$1~/&lt;none&gt;/ || \$1~/'&quot;$id&quot;'/ || \$3~/'&quot;\$id&quot;'/) {print \$3;}}')
+docker rmi -f \$image_id
+END
+chmod +x /bin/dri
+
+## docker exec
+cat &gt; /bin/de &lt;&lt;END
+#!/bin/sh
+
+if [ \$# -lt 1 ] ; then
+    echo &quot;usage: de docker_id&quot;
+    exit 0
+fi
+# exec into
+docker exec -it \$1 /bin/bash
+END
+chmod +x /bin/de
+
+## docker logs
+cat &gt; /bin/dl &lt;&lt;END
+#!/bin/sh
+
+if [ \$# -lt 1 ] ; then
+    echo &quot;usage: dl docker_id&quot;
+    exit 0
+fi
+# logs
+docker logs -f \$1
+END
+chmod +x /bin/dl
+</code></pre>
+
+<p>然后运行脚本：</p>
+<pre><code>chmod +x install_dockercompose.sh
+./install_dockercompose.sh
+</code></pre>
+
+<h4 id="_3">运行单节点网络</h4>
+<p>编辑一个docker-compose.yml文件：</p>
+<pre><code># membersrvc
+membersrvc:
+  image: hyperledger/fabric-membersrvc
+  ports:
+    - &quot;50051:50051&quot;
+  command: membersrvc
+
+# validating peers
+# running with the CA
+vp0:
+  image: hyperledger/fabric-peer
+  ports:
+    - &quot;5000:5000&quot;
+    - &quot;30303:30303&quot;
+    - &quot;30304:30304&quot;
+  environment:
+    - CORE_PEER_ADDRESSAUTODETECT=true
+    - CORE_VM_ENDPOINT=unix:///var/run/docker.sock
+    - CORE_LOGGING_LEVEL=DEBUG
+    - CORE_PEER_ID=vp0
+    - CORE_SECURITY_ENROLLID=test_vp0
+    - CORE_SECURITY_ENROLLSECRET=MwYpmSRjupbT
+  links:
+    - membersrvc
+  command: sh -c &quot;sleep 5; peer node start --peer-chaincodedev&quot;
+</code></pre>
+
+<p>然后运行docker-compose up就起来了，可以通过peer命令执行chaincode的deploy/invoke等操作。</p>
+<h3 id="_4">镜像启动运行</h3>
+<p>Vagrant启动VM的方式自动会安装Docker和编译Docker镜像文件，然后再运行Fabric。如果有Docker的运行环境，就可以直接同docker-compose一样启动服务了。最简单的方式就是：</p>
+<h4 id="docker">安装Docker</h4>
+<p>各种环境的安装参考：<a href="https://docs.docker.com">Docker安装</a>，[安装docker-compose]。</p>
+<h4 id="docker_1">下载Docker镜像</h4>
+<pre><code>docker pull hyperledger/fabric-membersrvc
+docker pull hyperledger/fabric-peer
+</code></pre>
+
+<h4 id="fabric">启动Fabric服务</h4>
+<p>参考：[运行单节点网络]。</p>
+<h3 id="_5">源码编译安装</h3>
+<p>源码的安装以Ubuntu/Deian操作系统为例。</p>
+<h4 id="_6">准备工作</h4>
+<ul>
+<li>安装Go</li>
+</ul>
+<p><a href="https://golang.org/dl">Go安装包下载</a>，这个应该也是要翻墙下的。</p>
+<ul>
+<li>安装Docker</li>
+</ul>
+<p>各种环境的安装参考：<a href="https://docs.docker.com">Docker安装</a>，[安装docker-compose]。</p>
+<p>如果要非root环境执行docker命令，可以把用户xxx添加到docker组：</p>
+<pre><code>usermod -a -G docker xxx
+</code></pre>
+
+<ul>
+<li>配置环境变量</li>
+</ul>
+<p>请自行替换下面GOPATH的设置：</p>
+<pre><code>claritys-MBP:~ clarity$ cat ~/.profile
+export GOROOT=/usr/local/go
+export GOPATH=/Users/clarity/Projects
+export PATH=$PATH:/usr/local/sbin
+</code></pre>
+
+<ul>
+<li>安装Git并下载源码</li>
+</ul>
+<pre><code>mkdir -p $GOPATH/src/github.com/hyperledger
+cd $GOPATH/src/github.com/hyperledger
+git clone https://github.com/hyperledger/fabric.git
+</code></pre>
+
+<ul>
+<li>安装RocksDB</li>
+</ul>
+<pre><code>apt-get install -y libsnappy-dev zlib1g-dev libbz2-dev
+cd /tmp
+git clone https://github.com/facebook/rocksdb.git
+cd rocksdb
+git checkout v4.1
+PORTABLE=1 make shared_lib
+INSTALL_PATH=/usr/local make install-shared
+</code></pre>
+
+<ul>
+<li>安装pip</li>
+</ul>
+<pre><code>apt-get install -y python-pip
+pip install --upgrade pip
+pip install behave nose docker-compose
+pip install -I flask#####0.10.1 python-dateutil#####2.2 pytz#####2014.3 pyyaml#####3.10 couchdb#####1.0 flask-cors#####2.0.1 requests#####2.4.3
+</code></pre>
+
+<ul>
+<li>错误：Release: The following signatures couldn&rsquo;t be verified because the public key is not available: 
+ NO_PUBKEY 2EA8F35793D8809A</li>
+</ul>
+<pre><code>apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 2EA8F35793D8809
+</code></pre>
+
+<ul>
+<li>错误：peer: error while loading shared libraries: librocksdb.so.4.1: cannot open shared object file: No such file or directory</li>
+</ul>
+<pre><code>cp /usr/local/lib/librocksdb.so.4.1* /usr/lib/
+</code></pre>
+
+<p>也可以把/usr/local/lib目录增加到/etc/ld.so.conf目录下。或者编译的时候改成：INSTALL_PATH=/usr make install-shared</p>
+<h4 id="docker_2">编译Docker镜像</h4>
+<pre><code>cd $GOPATH/src/github.com/hyperledger/fabric
+make membersrvc-image
+make peer-image
+</code></pre>
+
+<h4 id="fabric_1">运行Fabric服务</h4>
+<p>参考：[运行单节点网络]。</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>Copyright &copy; 2014-2016 <a href="https://wutongtree.com" target="_blank">wutongtree.com</a></center>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
